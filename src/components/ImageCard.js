@@ -9,6 +9,7 @@ class ImageCard extends React.Component {
 
    componentDidMount() {
       // console.log(this.imageRef.current.clientHeight);
+      // added addEventListener for first download the image from unsplash
       this.imageRef.current.addEventListener("load", this.setSpans);
    }
 
